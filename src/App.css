@@ -1,0 +1,280 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'montserrat';
+
+}
+*::-webkit-scrollbar {
+	display: none;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+}
+
+.left-nav {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: linear-gradient(0deg, #00c3ff, #75777c);
+}
+
+header {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+}
+header a {
+	color: white;
+}
+.routes {
+	width: 100%;
+	height: 85%;
+	overflow-y: scroll;
+}
+.route {
+	width: 100%;
+	/* height: 220px; */
+	height: 70px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+a {
+	color: white;
+}
+
+.route-title {
+	width: 100%;
+	min-height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.route-title a,
+.route-title-in a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.route-title:hover {
+	background-color: rgb(0, 83, 191);
+	border-left: 10px solid white;
+}
+.route-title-in {
+	width: 100%;
+	height: 50px;
+	background: rgb(16, 67, 135);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.route-title-in:hover {
+	background-color: rgba(9, 168, 242, 0.823);
+}
+.project{
+	margin-left: 5rem;
+}
+
+.right-section {
+	width: 85%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* top nav */
+.top-nav {
+	width: 100%;
+	height: 10%;
+	background: #000;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-around; */
+	background-color: white;
+	
+	box-shadow: 4px 3px 10px gray;
+}
+
+#grade,
+#tech {
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	font-size: 1rem;
+	outline: none;
+}
+#grade option {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+.top-nav-l ul {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	/* background-color: #3971ff; */
+}
+.top-nav-l ul li {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+/* top nav */
+
+/* main */
+.main {
+	width: 100%;
+	height: 90%;
+	overflow-y: scroll;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/* background-color: #3971ff; */
+}
+.filter-breadcrumb {
+	width: 85%;
+	min-height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	/* background: linear-gradient(90deg, #00c3ff8c, #0744ec07); */
+	color: rgb(73, 73, 73);
+}
+.breadcrumb {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	/* background-color: #3971ff; */
+	align-items: center;
+	letter-spacing: 2px;
+}
+.breadcrumb h2 {
+	margin: 0 5px;
+}
+.filters {
+	width: 70%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* padding: 4rem; */
+	/* background-color: aqua; */
+	
+}
+.filters select {
+	min-width: 300px;
+	background-color: #edfcff;
+	outline: none;
+	height: 200px;
+	/* display: inline-block; */
+	/* height: 100%; */
+	border: none;
+	/* padding: 2rem; */
+	/* box-sizing: border-box; */
+	border-radius: 4px;
+	color: rgb(58, 58, 58);
+	/* display: flex; */
+	/* align-items: center; */
+	padding: 5px 20px;
+	
+}
+
+.filters option {
+	background: white;
+	color: black;
+	border-radius: 4px;
+	outline: none;
+	border:none;
+	padding: 1rem ;
+	 -webkit-box-shadow: 6px 9px 5px 0px rgba(240,240,240,1);
+	-moz-box-shadow: 6px 9px 5px 0px rgba(240,240,240,1);
+	box-shadow: 6px 9px 5px 0px rgba(240,240,240,1);;
+}
+
+main {
+	width: 80%;
+	min-height: 400px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	box-shadow: 1px -1px 10px gray;
+}
+
+/* from UI libraries */
+.MuiAccordion-root.Mui-expanded {
+	margin: 0 !important;
+}
+/* from UI libraries */
+.logo{
+	margin-left: -1.5rem;
+}
+
+/* .resultScreen{
+	width: 100%;
+	height: 100%;
+	background-color: #f1f1f1;
+	position: relative;
+	padding: 1px;
+
+} */
+
+/* .accordian{
+	width: 100%;
+	height: 100%;
+	background-color: aqua;
+	position: absolute;
+	top: 0;
+	opacity: 0.9;
+	transform: translateX(0);
+
+} */
+
+/* .linkScreen{
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+} */
+
+/* .plinks{
+	width: 200px;
+	height: 50px;
+	background-color: #0751EE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 2rem;
+} */
