@@ -51,6 +51,8 @@ function TopNav(props) {
 							setGrade(e.target.value)
 						}}
 						onClick={(e) => props.changeGrade(e)}>
+                   {console.log(path)}
+				    
 						<option value="">Select Grade</option>
 						<option value="1-2">1-2</option>
 						<option value="3-4">3-4</option>
@@ -58,7 +60,7 @@ function TopNav(props) {
 						<option value="7-8">7-8</option>
 						<option value="9-12">9-12</option>
 					</select>
-
+              
 					<select
 						name="tech"
 						id="tech"

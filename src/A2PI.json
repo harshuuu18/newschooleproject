@@ -5,6 +5,7 @@
 		"grade": "1-2",
 		"tech": "game",
 		"data": "1to1/india/1-2/game",
+		"demo" : "https://www.facebook.com/",
 		"links1": [
 			{
 				"link": [
@@ -321,7 +322,8 @@
 		"grade": "1-2",
 		"tech": "app",
 		"data": "1to1/india/1-2/app",
-		"path": "/1to1/india"
+		"path": "/1to1/india",
+		"demo" : "https://www.google.com/"
 	},
 	{
 		"type": "1to1",
