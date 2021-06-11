@@ -6,7 +6,7 @@ import * as AiIcons from "react-icons/ai"
 import { SidebarData } from "./SidebarData"
 import SubMenu from "./SubMenu"
 import { IconContext } from "react-icons/lib"
-import logo from './logo.png'
+// import logo from './logo.png'
 
 // import logo from '../../src/logo.jpeg';
 
@@ -58,8 +58,8 @@ const Sidebar = () => {
 				<SidebarNav sidebar={sidebar}>
 					<SidebarWrap>
 						<NavIcon to="/" onClick={() => window.location.reload()}>
-							<img className="logo" width="210px" src={logo}></img>
-							{/* <h2>LOGO</h2> */}
+							{/* <img className="logo" width="210px" src={logo}></img> */}
+							<h2>LOGO</h2>
 						</NavIcon>
 						{SidebarData.map((item, index) => {
 							return <SubMenu item={item} key={index} />

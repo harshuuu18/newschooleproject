@@ -44,7 +44,7 @@ function RenderData(props) {
 	const grade = props.grade
 	const tech = props.tech
 	const [newData, setNewData] = useState([])
-	const [newLinks, setNewLinks] = useState(["Project", "Slide", "One Pager"])
+	const [newLinks, setNewLinks] = useState(["1", "2", "3"])
 
 	useEffect(() => {
 		console.log("path changed")
@@ -73,7 +73,9 @@ function RenderData(props) {
 		
 			{!grade || !tech ? (
 				<>
-					{/* {newData.map((i) => {
+					{
+						<h4>Please select the right Grade and Technology</h4>
+					/* {newData.map((i) => {
 						console.log(i.grade)
 						return (
 							<>
@@ -170,7 +172,7 @@ function RenderData(props) {
 										aria-controls="panel1a-content"
 										id="panel1a-header">
 										<Typography className={classes.heading}>
-											Section-1 -{" "}
+											Level-1 -{" "}
 											{` ( ${i.country} - ${i.grade} - ${i.tech} ) `}
 										</Typography>
 									</AccordionSummary>
@@ -186,7 +188,7 @@ function RenderData(props) {
 															}}
 															className={classes.btnStyle}
 															color="primary">
-															Level-{index + 1}
+															Session-{index + 1}
 														</Button>
 													)
 											  })
@@ -199,7 +201,7 @@ function RenderData(props) {
 										aria-controls="panel1a-content"
 										id="panel1a-header">
 										<Typography className={classes.heading}>
-											Section-1 -{" "}
+											Level 2-{" "}
 											{` ( ${i.country} - ${i.grade} - ${i.tech} ) `}
 										</Typography>
 									</AccordionSummary>
@@ -212,7 +214,7 @@ function RenderData(props) {
 															href={l1}
 															className={classes.btnStyle}
 															color="primary">
-															Level-{index + 1}
+															Session-{index + 1}
 														</Button>
 													)
 											  })
@@ -225,7 +227,7 @@ function RenderData(props) {
 										aria-controls="panel1a-content"
 										id="panel1a-header">
 										<Typography className={classes.heading}>
-											Section-1 -{" "}
+											Level 3 -{" "}
 											{` ( ${i.country} - ${i.grade} - ${i.tech} ) `}
 										</Typography>
 									</AccordionSummary>
@@ -238,7 +240,7 @@ function RenderData(props) {
 															href={l1}
 															className={classes.btnStyle}
 															color="primary">
-															Level-{index + 1}
+															Session-{index + 1}
 														</Button>
 													)
 											  })
@@ -260,7 +262,14 @@ function RenderData(props) {
 				console.log(n)
 				return (
 					<>
-						<h1>{n}</h1>
+								<Button
+									variant="contained"
+									href={n}
+									className={classes.btnStyle}
+									color="primary">
+									Project
+								</Button>
+								
 					</>
 				)
 			})}
