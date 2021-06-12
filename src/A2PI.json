@@ -5,13 +5,7 @@
 		"grade": "1-2",
 		"tech": "game",
 		"data": "1to1/india/1-2/game",
-		"demo" : [{
-			"link": [
-				"https://www.google.com/",
-				"https://www.instagram.com/",
-				"https://www.google.com/"
-			]
-		}],
+		"demo": ["demo1", "demo2", "demo3", "demo4", "demo5"],
 		"links1": [
 			{
 				"link": [
@@ -329,7 +323,7 @@
 		"tech": "app",
 		"data": "1to1/india/1-2/app",
 		"path": "/1to1/india",
-		"demo" : "https://www.google.com/"
+		"demo": "https://www.google.com/"
 	},
 	{
 		"type": "1to1",

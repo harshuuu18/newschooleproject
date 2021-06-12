@@ -9,9 +9,7 @@ function Main(props) {
 	const location = useLocation().pathname
 	return (
 		<>
-			<div className="main">
-				<RenderData grade={grade} tech={tech} />
-			</div>
+			<RenderData grade={grade} tech={tech} />
 		</>
 	)
 }
